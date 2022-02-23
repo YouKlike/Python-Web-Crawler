@@ -8,4 +8,6 @@ with req.urlopen(src) as rsp:
 mylist = data["result"]["results"]
 for exh in mylist:
     
-    print("單位:"+exh["租借單位"]+"\t車站："+exh["車站名稱"]+"\t活動名稱"+exh["活動名稱"]+"\t日期:"+exh["日期"]+"\n")
+    print("單位:"+exh["租借單位"]+"\t車站："
+          +exh["車站名稱"]+"\t活動名稱"
+          +exh["活動名稱"]+"\t日期:"+exh["日期"]+"\n")
