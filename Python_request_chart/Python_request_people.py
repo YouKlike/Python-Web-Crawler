@@ -5,6 +5,7 @@ url = 'https://gis.taiwan.net.tw/od/01_PRD/%E6%AD%B7%E5%B9%B4%E5%9C%8B%E5%85%A7%
 
 webpage = urllib.request.urlopen(url)
 data = csv.reader(webpage.read().decode('UTF-8').splitlines())
+plt.rcParams['font.sans-serif'] = ['Taipei Sans TC Beta']
 
 people = []
 months = [1,2,3,4,5,6,7,8,9,10,11,12]
@@ -19,6 +20,6 @@ for i in range(len(people)):
 
 
 plt.bar(months, people)
-plt.xlabel('Month')
-plt.ylabel('People')
+plt.xlabel('月份')
+plt.ylabel('人數')
 plt.show()
