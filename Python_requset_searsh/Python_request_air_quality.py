@@ -10,4 +10,7 @@ search = input("請輸入要查詢的站名: ")
 mylist = data['records']
 for exh in mylist:
     if (exh["SiteName"].find(search)) >= 0:
-        print("縣市: " , exh['County'] , "\t空氣品質指標AQI: " , exh['AQI'] , "\n狀態: " , exh['Status'] , "\t時間: " , exh['PublishTime'] )
+        print("縣市: " , exh['County'] 
+              , "\t空氣品質指標AQI: " , exh['AQI'] 
+              , "\n狀態: " , exh['Status'] 
+              , "\t時間: " , exh['PublishTime'] )
